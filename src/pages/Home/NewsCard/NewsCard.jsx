@@ -9,9 +9,9 @@ const NewsCard = ({news}) => {
     const{_id, title, details, image_url, author} = news;
     return (
         <Card className="mb-4">
-      <Card.Header className='d-flex'>
+      <Card.Header className='d-flex align-items-center'>
       <Image style={{height:'40px'}} src={author.img} roundedCircle />
-      <div className='ps-2 flex-grow-1' >
+      <div className='ps-2 flex-grow-1 mt-3' >
         <p className='mb-0'>{author?.name}</p>
         <p> <small> {moment(author.published_date).format('YYYY-MMMM-D')} </small> </p>
       </div>
